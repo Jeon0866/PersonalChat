@@ -2,8 +2,10 @@
 개인 심리 상담용 챗봇
 
 # Technology Stack
+- 조건 : JQuery 및 Ajax 사용하기
 - Frontend : Html, Css, Javascript, JQuery, Ajax ...
 - Backend : Node.js, Express ...
+- sever : MySQL
 
 # Task
 - level1 : node.js에서 login 및 server CRUD 중 CRU 구현 (O)
