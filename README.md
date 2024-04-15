@@ -12,4 +12,4 @@
 - level2 : Google Gemini API 연결 (O)
 - level3 : ToDo list CRUD 구현
 - level4 : 코드 정리
-  level5 : LangChain 적용하기
+- level5 : LangChain 적용하기
