@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/chat.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="container">
+       <div>
+        <div class="container-fluid h-100">
+			<div class="row justify-content-center h-100">		
+				<div class="col-md-7 chat"> <!-- col-sm-12 col-xl-6 -->
+					<div class="card">   
+						<div class="card-header msg_head">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="https://i.ibb.co/g71jY0h/gemini-logo.jpg" class="rounded-circle user_img" onclick="main()"/>
+								</div>
+								<div class="user_info">
+									<span>Gemini</span>
+									<p>ask me anything!</p>
+								</div>
+								<!-- 새로 추가한 부분 -->
+								<div class="user_info p">
+									<p class="a"></p>
+									<p class="b">First, try saying “Hello” in Korean!<br>
+										I am a Google Gemini<br>
+										Ask me anything.</p>      
+                                </div>
+                                <!-- 버튼 -->
+                                <div>
+                                    <form method="POST" action="/logout">
+                                        <button type="submit" class="btn btn_margin button" >Log out</button>
+                                    </form>
+                                </div>
+							</div>
+						</div>
+						<div id="messageFormeight" class="card-body msg_card_body">
+						</div>
+						<div class="card-footer">
+							<form id="messageAreaGemini" class="input-group">
+                                <input type="text" id="text" name="msg" placeholder="한글을 입력 후 'Enter Key'를 눌러주세요." autocomplete="off" class="form-control type_msg" required/>
+								<div class="input-group-append">
+									<button type="submit" id="send" class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+            <!--
+           <h1>Hello world!</h1>
+           <h2>Welcom: <%= user.fullname %></h2>
+           -->
+           
+           
+       </div>
+    </div>
+</div>
+</body>
+</html>
