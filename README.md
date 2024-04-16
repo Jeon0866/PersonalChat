@@ -6,7 +6,7 @@
 - Frontend : Html, Css, Javascript, JQuery, Ajax ...
 - Backend : Node.js, Express ...
 - sever : MySQL
-- Api : Gemini-Pro
+- API : Gemini-Pro
 
 # Task
 - level1 : node.js에서 login 및 server CRUD 중 CRU 구현 (O)
