@@ -25,6 +25,8 @@ app.use(session({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.use('/images', express.static(__dirname + '/login-register-nodejs-mysql-ajax/images')); // route에 대한 미들웨어 등록. 여기에 매칭되는 모든 요청은 이곳을 거쳐서 처리
+
 // config view engine
 viewEngine(app);
 
@@ -62,10 +64,10 @@ app.post('/homepage', async (req, res) => {
       const model = genAI.getGenerativeModel({ model: "gemini-pro" });
       const chat = model.startChat({
         history: [
-          { role: "user", parts: [{ text: "Hello! nice to meet you." }] },
-          { role: "model", parts: [{ text: "Great to meet you. What would you like to know?" }] },
-          { role: "user", parts: [{ text: "You are a psychological counseling expert." }] },
-          { role: "model", parts: [{ text: " " }] },
+          { role: "user", parts: [{ text: "Hello! nice to meet you." }] }, // zero shot prompt
+          { role: "model", parts: [{ text: "Great to meet you. What would you like to know?" }] }, // one-shot
+          { role: "user", parts: [{ text: "I'm doing great. I would like you, as a psychological counseling expert, to help me with my counseling." }] },
+          { role: "model", parts: [{ text: "Consultation form, 1. Name: , 2. Age: , 3. Ask how you are feeling today: , 4. Give encouragement and praise: , 5. Reason for consultation: , 6. Symptoms: " }] },
         ],
         generationConfig: {
           maxOutputTokens: 100,
