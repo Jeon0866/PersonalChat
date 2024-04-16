@@ -19,6 +19,8 @@
 1. Todo list
    - image 인식부분 해결 필요
    - text가 box를 넘어갈때 줄바꿈 혹은 글자수 제한 기능 추가 필요
-2. Multi turn conversation Prompt 적용
-3. 고도화
+2. Multi turn conversation Prompt 적용하기
+3. 반응형 추가하기
+   - 반응형이 적용 안된 부분을 찾아서 적용하기
+5. 고도화
    - 대화 내용 저장 및 시각화
