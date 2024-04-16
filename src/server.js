@@ -47,7 +47,6 @@ app.listen(port, ()=>{
 // genai로 데이터를 보내는 부분
 app.use(express.json()); // JSON 데이터 처리를 위해 추가
 
-//
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // api key
@@ -58,16 +57,19 @@ app.post('/homepage', async (req, res) => {
    const msg = req.body.msg;  // 데이터 받는 부분
    console.log('Received message:', msg);
    //console.log(typeof(data)) // str
+   
+   const fs = require('fs');
 
    try {
       // Gemini 모델 실행
       const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+
       const chat = model.startChat({
         history: [
           { role: "user", parts: [{ text: "Hello! nice to meet you." }] }, // zero shot prompt
-          { role: "model", parts: [{ text: "Great to meet you. What would you like to know?" }] }, // one-shot
-          { role: "user", parts: [{ text: "I'm doing great. I would like you, as a psychological counseling expert, to help me with my counseling." }] },
-          { role: "model", parts: [{ text: "Consultation form, 1. Name: , 2. Age: , 3. Ask how you are feeling today: , 4. Give encouragement and praise: , 5. Reason for consultation: , 6. Symptoms: " }] },
+          { role: "model", parts: [{ text: "Great to meet you. What would you like to know?" }] }, 
+          { role: "user", parts: [{ text: "I'm doing great. I would like you, as a psychological counseling expert, to help me with my counseling." }] }, // one-shot prompt
+          { role: "model", parts: [{ text: "Consultation form, 1. Name: , 2. Age: , 3. Ask how you are feeling today: , 4. Reason for consultation: , 5. Symptoms: " }] },
         ],
         generationConfig: {
           maxOutputTokens: 100,
@@ -76,10 +78,42 @@ app.post('/homepage', async (req, res) => {
       const result = await chat.sendMessage(msg);  // 데이터 받는 부분
       const response = await result.response;
       const text = response.text();
-      console.log('Gemini response:', text);
+      console.log('Gemini response:', text);      
   
       // 클라이언트에 응답 보내기
       res.json(text); //res.json({ status: 'success', response: text });
+
+      // 채팅 기록 저장
+      const chatHistory = [
+        { role: "user", text: msg },
+        { role: "model", text: text },
+      ];
+
+      // JSON 파일에 저장
+      const filePath = 'chat_history.json';
+      fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) {
+          // 파일이 없는 경우 새로 생성
+          fs.writeFile(filePath, JSON.stringify([chatHistory], null, 2), (err) => {
+            if (err) {
+              console.error('Error saving chat history:', err);
+            } else {
+              console.log('Chat history saved to file.');
+            }
+          });
+        } else {
+          // 파일이 있는 경우 새로운 채팅 기록 추가
+          const chatHistoryData = JSON.parse(data);
+          chatHistoryData.push(chatHistory);
+          fs.writeFile(filePath, JSON.stringify(chatHistoryData, null, 2), (err) => {
+            if (err) {
+              console.error('Error saving chat history:', err);
+            } else {
+              console.log('Chat history saved to file.');
+            }
+          });
+        }
+      });
 
     } catch (error) {
       console.error('Error:', error);
