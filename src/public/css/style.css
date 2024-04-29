@@ -1,3 +1,4 @@
+/* login */
 .image-left{
 	background-image: url("../images/background.jpg");
 	height: 600px;
@@ -23,12 +24,13 @@ legend {
     background-color: rgba(0,0,0,0.3);
 }
 
+/* homepage */
 .chat{
 	margin-top: auto;
 	margin-bottom: auto;
 }
 .card{
-	height: 760px;
+	height: 650px;
 	border-radius: 15px !important;
 	background-color: whitesmoke !important;
 	
@@ -37,6 +39,7 @@ legend {
 	row-gap: 20px;
 }
 .msg_card_body{
+	max-height: 550px;
 	overflow-y: auto;
 }
 .card-header{
@@ -57,6 +60,7 @@ legend {
 }
 .container{
 	margin-top: 2%;
+	margin-left: 20px;
   	justify-content: space-between;
 }
 .type_msg{
@@ -176,14 +180,14 @@ legend {
 	position: absolute;
 	left: 0;
 	bottom: -15px;
-	color: rgba(255,255,255,0.5);
+	color: rgba(0, 0, 0, 0.5);
 	font-size: 10px;
 }
 .msg_time_send{
 	position: absolute;
 	right:0;
 	bottom: -15px;
-	color: rgba(255,255,255,0.5);
+	color: rgba(0, 0, 0, 0.5);
 	font-size: 10px;
 }
 .msg_head{
@@ -262,6 +266,7 @@ legend {
 }
 }
 
+/* weather */
 
 
 /* todo */
@@ -269,7 +274,7 @@ legend {
     width: 50%;
     min-height: 10vh;
     /* background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
-    padding: 10px;
+    padding: 5px;
 }
 
 
@@ -277,11 +282,12 @@ legend {
     width: 100%;
     max-width: 540px;
     background: rgba(0,0,0,0.03);
-    margin:150px auto 20px;
-    padding: 40px 30px 70px;
+    margin: 15px auto 20px;
+    padding: 20px 30px 70px;
     border-radius: 15px;
     box-shadow: 0px 0px 3px #afafaf; 
 	overflow-y: scroll;
+	max-height: 295px;
 	height: 55%
 }
 
@@ -352,6 +358,7 @@ div p {
     cursor: pointer;
     border-radius: 12px;
     margin: 1px;
+	position: relative;
 }
 
 ul li{
@@ -421,3 +428,220 @@ ul li span:hover{
     background: rgba(0,0,0,0.3);
     color: #fff;
 }
+
+/* weather */
+.future-forecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding:15px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background: #e6e6e6
+}
+
+.future-forecast .today .day{
+    padding: 5px 15px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.future-forecast .today .temp{
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.future-forecast .weather-forecast{
+    display: flex;
+}
+
+.weather-forecast .weather-forecast-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+
+.weather-forecast .weather-forecast-item .day{
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+/* music player */
+/* * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  }
+*/
+  
+/*
+  html {
+	font-size: 62.5%;
+  }
+*/
+
+/*
+  body {
+	font-family: 'Poppins', 'Montserrat', sans-serif;
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	-webkit-tap-highlight-color: transparent;
+  }
+ */ 
+ 
+  .container-mp{
+	width: 30rem;
+	padding-left: 15px;
+  }
+
+
+  .heading {
+	color: #000;
+	text-align: center;
+	text-shadow: 2px 1px #848484;
+	font-size: 2.5rem;
+	font-weight: 500;
+  }
+
+  
+  .music-container {
+	font-size: 80%;
+	background-color: #fff;
+	border-radius: 1rem;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+	padding: 1rem 2rem;
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+  }
+  
+  #cover-box {
+	border-radius: 1rem;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+	position: relative;
+	bottom: 3rem;
+	width: 85%;
+  }
+  
+  #cover {
+	border-radius: inherit;
+	display: block;
+	height: 100%;
+	width: 100%;
+  }
+  
+  #music-box {
+	width: 100%;
+  }
+  
+  #music-info {
+	text-align: center;
+	width: 100%;
+	position: relative;
+	bottom: 1rem;
+  }
+  
+  #title {
+	font-size: 1.5rem;
+	font-weight: 600;
+  }
+  
+  #artist {
+	font-size: 1.2rem;
+	font-weight: 500;
+  }
+
+  #timer {
+	font-size: 1.0rem;
+	font-weight: 500;
+  }
+
+  #duration {
+	font-size: 1.0rem;
+	font-weight: 500;
+  }
+  
+  #progress-container {
+	height: 4px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin: 2rem 0 1rem;
+	cursor: pointer;
+	border-radius: 8px;
+  }
+  
+  #progress {
+	background-color: #000;
+	width: 0%;
+	height: inherit;
+	border-radius: inherit;
+	transition: width 100ms ease-in;
+  }
+  
+  #timer-bar {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.4rem;
+  }
+  
+  #control-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+  }
+  
+  .btn-m {
+	display: inline-block;
+	font-size: 1.6rem;
+	padding: 1rem;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	border-radius: 4rem;
+	color: black;
+	transition: background 200ms linear, color 200ms linear;
+  }
+  
+  .special-btn {
+	background-color: #000;
+	color: #fff;
+	font-size: 2.2rem;
+	margin: 0 1rem;
+	padding: 1.4rem;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	border-radius: 4rem;
+	transition: opacity 200ms linear;
+  }
+  
+  @media (hover: hover) {
+	.btn-m:hover {
+	  background-color: #000; /* #d8d8d8 */
+	  color: #fff;  /* #000 */
+	}
+  
+	.special-btn:hover {
+	  opacity: 0.75;
+	}
+  }
+  
