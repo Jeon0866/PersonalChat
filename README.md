@@ -1,6 +1,14 @@
 # PersonalChat
 개인 심리 상담용 챗봇
 
+
+|blender|stacker| 
+  |---|---|
+  |<img style="margin-top: 10px" src='./IMAGES/loginPage.PNG'> </img>|<img style="margin-top: 10px" src='./image/stacked_visualization.png'> </img>|
+  |<img style="margin-top: 10px" src='./IMAGES/register.PNG'> </img>|<img style="margin-top: 10px" src='./image/stack_r2_score.png'> </img>|
+  |<img style="margin-top: 10px" src='./IMAGES/homePage.PNG'> </img>|<img style="margin-top: 10px" src='./image/stack_learning_curve.png'> </img>|
+
+
 # Technology Stack
 - 조건 : JQuery 및 Ajax 사용하기
 - Frontend : Html, Css, Javascript, JQuery, Ajax ...
