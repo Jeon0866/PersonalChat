@@ -43,6 +43,6 @@
 # 구성
 |Viewer| 
 |---|
-|<img style="margin-top: 10px" height="400" width="600" src='./IMAGES/loginPage.PNG'> </img> |
-|<img style="margin-top: 10px" height="400" width="800" src='./IMAGES/register.PNG'> </img>|
-|<img style="margin-top: 10px" height="400" width="800" src='./IMAGES/homePage.PNG'> </img>|
+|<img style="margin-top: 10px" height="500" width="800" src='./IMAGES/loginPage.PNG'> </img> |
+|<img style="margin-top: 10px" height="500" width="800" src='./IMAGES/register.PNG'> </img>|
+|<img style="margin-top: 10px" height="500" width="800" src='./IMAGES/homePage.PNG'> </img>|
