@@ -1,13 +1,6 @@
 # PersonalChat
 개인 심리 상담용 챗봇
 
-
-|Viewer| 
-|---|
-|<img style="margin-top: 10px" height="400" width="600" src='./IMAGES/loginPage.PNG'> </img> |
-|<img style="margin-top: 10px" height="400" width="600" src='./IMAGES/register.PNG'> </img>|
-|<img style="margin-top: 10px" height="400" width="600" src='./IMAGES/homePage.PNG'> </img>|
-
 # Technology Stack
 - 조건 : JQuery 및 Ajax 사용하기
 - Frontend : Html, Css, Javascript, JQuery, Ajax ...
@@ -46,3 +39,10 @@
 
 # 참고
 - [발표자료 정리](https://wjs545.notion.site/Psychological-counseling-Bot-648aeb7e5ca743cfb57fe0602791120e?pvs=4)
+
+# 구성
+|Viewer| 
+|---|
+|<img style="margin-top: 10px" height="400" width="600" src='./IMAGES/loginPage.PNG'> </img> |
+|<img style="margin-top: 10px" height="400" width="600" src='./IMAGES/register.PNG'> </img>|
+|<img style="margin-top: 10px" height="400" width="600" src='./IMAGES/homePage.PNG'> </img>|
