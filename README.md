@@ -4,9 +4,9 @@
 
 |Viewer| 
 |---|
-|<img style="margin-top: 10px" width="500" src='./IMAGES/loginPage.PNG'> </img> |
-|<img style="margin-top: 10px" width="500" src='./IMAGES/register.PNG'> </img>|
-|<img style="margin-top: 10px" width="500" src='./IMAGES/homePage.PNG'> </img>|
+|<img style="margin-top: 10px" height="300" width="500" src='./IMAGES/loginPage.PNG'> </img> |
+|<img style="margin-top: 10px" height="300" width="500" src='./IMAGES/register.PNG'> </img>|
+|<img style="margin-top: 10px" height="300" width="500" src='./IMAGES/homePage.PNG'> </img>|
 
 # Technology Stack
 - 조건 : JQuery 및 Ajax 사용하기
