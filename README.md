@@ -35,6 +35,7 @@
     - Multi-turn conversation Prompt 방법론 고안해서 추가 적용하기
 7. open weather .env.OW_API_Key 인식 문제 (24.04.28)
 8. open weather API 401 error **( 해결 )** (24.04.28)
+9. music player 음량 버튼 추가하기
 
 # 참고
 - [발표자료 정리](https://wjs545.notion.site/Psychological-counseling-Bot-648aeb7e5ca743cfb57fe0602791120e?pvs=4)
