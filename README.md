@@ -3,7 +3,7 @@
 
 
 |Viewer| 
-|---|---|
+|---|
 |<img style="margin-top: 10px" width="200" src='./IMAGES/loginPage.PNG'> </img> |
 |<img style="margin-top: 10px" width="200" src='./IMAGES/register.PNG'> </img>|
 |<img style="margin-top: 10px" width="200" src='./IMAGES/homePage.PNG'> </img>|
