@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css">
 	<script src="/js/chat.js"></script>
@@ -59,8 +60,21 @@
 					</div>
 				</div>
 
-				<!-- Todo -->
+				<!-- Todo and weather -->
+				<!-- weather -->
 				<div class="container-todo">
+					<div class="future-forecast">
+						<div class="today" id="current-temp">
+							<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+							<div class="other">
+								<div class="day">Monday</div>
+								<div class="temp">Night - 25.6&#176; C</div>
+								<div class="temp">Day - 35.6&#176; C</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Todo -->
 					<div class="todo-app">
 						<h3>To-Do List <i class="far fa-calendar-check"></i></h3>
 						<p><small>간단하게 기록하세요.</small></p>
@@ -77,11 +91,44 @@
 						</ul>
 					</div>
 				</div>
+
+				<!-- Music Player -->
+				<div class="container-mp">
+					<!--<h1 class="heading">Music Player</h1>-->
+					<div class="music-container">
+					  <div id="cover-box">
+						<img src="/images/cover1.jpg" alt="cover-image" id="cover" />
+					  </div>
+					  <div id="music-box">
+						<audio id="disc"></audio>
+						<div id="music-info">
+						  <h2 id="title"></h2>
+						  <h3 id="artist"></h3>
+						  <div id="progress-container">
+							<div id="progress"></div>
+						  </div>
+						  <div id="timer-bar">
+							<span id="timer">0:00</span>
+							<span id="duration"></span>
+						  </div>
+						</div>
+						<div id="control-box">
+						  <i id="prev" class="btn-m fas fa-backward"></i>
+						  <i id="play" class="special-btn fas fa-play"></i>
+						  <i id="next" class="btn-m fas fa-forward"></i>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
 			</div>
 		</div>
     </div>
 </div>
 <script src="/js/todo.js"></script>
+<script src="/js/music.js"></script>
+<script src="/js/weather.js"></script>
+
 </body>
 </html>
 
