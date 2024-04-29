@@ -44,5 +44,5 @@
 |Viewer| 
 |---|
 |<div style="width: 800px; height: 500px; margin: 10px auto;"><img src='./IMAGES/loginPage.PNG'> </img></div>|
-|<div style="width: 800px; height: 500px; margin: 10px auto;"><img src='./IMAGES/register.PNG'> </img></div>|
+|<div style="width: 800px; height: 500px; margin: 10px"><img src='./IMAGES/register.PNG'> </img></div>|
 |<div style="width: 800px; height: 500px; margin: 10px auto;"><img src='./IMAGES/homePage.PNG'> </img></div>|
