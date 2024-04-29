@@ -6,6 +6,7 @@ import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import session from "express-session";
 import passport from "passport";
+
 //import connection from "./config/connectDB";
 
 let app = express();
@@ -44,6 +45,11 @@ app.listen(port, ()=>{
 });
 
 
+
+
+
+
+/* Gemini API and chat history save */
 // genai로 데이터를 보내는 부분
 app.use(express.json()); // JSON 데이터 처리를 위해 추가
 
@@ -53,10 +59,10 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const apiKey = process.env.API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
 
+// GEMINI Session
 app.post('/homepage', async (req, res) => {
    const msg = req.body.msg;  // 데이터 받는 부분
    console.log('Received message:', msg);
-   //console.log(typeof(data)) // str
    
    const fs = require('fs');
 
@@ -102,7 +108,7 @@ app.post('/homepage', async (req, res) => {
             }
           });
         } else {
-          // 파일이 있는 경우 새로운 채팅 기록 추가
+          // 파일이 있는 경우 새로운 채팅 기록 추가r
           const chatHistoryData = JSON.parse(data);
           chatHistoryData.push(chatHistory);
           fs.writeFile(filePath, JSON.stringify(chatHistoryData, null, 2), (err) => {
