@@ -45,10 +45,6 @@ app.listen(port, ()=>{
 });
 
 
-
-
-
-
 /* Gemini API and chat history save */
 // genai로 데이터를 보내는 부분
 app.use(express.json()); // JSON 데이터 처리를 위해 추가
@@ -76,6 +72,10 @@ app.post('/homepage', async (req, res) => {
           { role: "model", parts: [{ text: "Great to meet you. What would you like to know?" }] }, 
           { role: "user", parts: [{ text: "I'm doing great. I would like you, as a psychological counseling expert, to help me with my counseling." }] }, // one-shot prompt
           { role: "model", parts: [{ text: "Consultation form, 1. Name: , 2. Age: , 3. Ask how you are feeling today: , 4. Reason for consultation: , 5. Symptoms: " }] },
+          { role: "user", parts: [{ text: "Please tell me how to start the dinosaur game." }] },
+          { role: "model", parts: [{ text: "Play the dinosaur game next to you. Press the space bar to start." }] },
+          { role: "user", parts: [{ text: "Please tell me the draw key." }] },
+          { role: "model", parts: [{ text: "Play draw it! r key, g key, b key, e key, c key is delete line!" }] },
         ],
         generationConfig: {
           maxOutputTokens: 100,
