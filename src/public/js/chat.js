@@ -44,24 +44,4 @@ $(document).ready(function() {
 
     });   
 });   
-    //     //
-    //     $.ajax({                                      
-    //         data: {                                   
-    //             msg: res,
-    //         },
-    //         type: "POST",
-    //         url: `${window.location.origin}/homepage`,
-    //         success: function(data){
-    //             alert("success_");
-    //         },
-    //         error: function(err){
-    //             alert("false");
-    //         }
-                                         
-    //     }).done(function(data) {                      
-    //         var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="https://i.ibb.co/g71jY0h/gemini-logo.jpg" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">' + data + '<span class="msg_time">' + str_time + '</span></div></div>';
-    //         $("#messageFormeight").append($.parseHTML(botHtml));    
-    //     });                                                         
-    //     event.preventDefault();                      
-    //   });
-//});                   
+                
