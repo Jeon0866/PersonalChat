@@ -11,7 +11,7 @@ const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 // env.OW_API_KEY 인식 안됨
-const API_KEYS = 'df5a60d03cf9ab1a470e28a961073f3f'; // process.env.OW_API_KEY;
+const API_KEYS = 'API_KEY'; // process.env.OW_API_KEY;
 console.log(API_KEYS);
 
 
