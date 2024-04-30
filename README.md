@@ -43,6 +43,7 @@
 |<div style="width: 500px; height: 400px; margin: 10px auto;"><img src='./IMAGES/loginPage.PNG'> </img></div>|
 |<div style="text-align: center; margin: 10px auto;"><img src='./IMAGES/register.PNG'> </img></div>|
 |<div style="width: 500px; height: 400px; margin: 10px auto;"><img src='./IMAGES/homePage.PNG'> </img></div>|
+|<div style="width: 500px; height: 400px; margin: 10px auto;"><img src='./IMAGES/homePage_.PNG'> </img></div>|
 
 # 참고
 - [발표자료 정리](https://wjs545.notion.site/Psychological-counseling-Bot-648aeb7e5ca743cfb57fe0602791120e?pvs=4)
