@@ -42,7 +42,6 @@
 |---|
 |<div style="width: 500px; height: 400px; margin: 10px auto;"><img src='./IMAGES/loginPage.PNG'> </img></div>|
 |<div style="width: 500px; height: 400px; margin: 10px auto;"><img src='./IMAGES/register.PNG'> </img></div>|
-|<div style="width: 500px; height: 400px; margin: 10px auto;"><img src='./IMAGES/homePage.PNG'> </img></div>|
 |<div style="width: 500px; height: 400px; margin: 10px auto;"><img src='./IMAGES/homePage_.PNG'> </img></div>|
 
 # 참고
